@@ -19,3 +19,15 @@
         
     li a7, 1
     ecall
+    
+    add a0, zero, zero
+    add t0, zero, zero
+        
+    for2:
+    blt t1, t0, end2
+    add a0, a0, s2
+    add t0, t0, s0
+    j for2
+    end2:
+        
+    ecall
