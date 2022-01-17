@@ -4,7 +4,6 @@ esempio: .string "pI po"
 .text
 la a0 esempio
 li a1, 0
-li a3, 0
 li t2, 97
 li t3, 122
 
