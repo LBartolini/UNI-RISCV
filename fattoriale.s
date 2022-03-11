@@ -9,6 +9,10 @@ jal fattoriale
 
 j end
 
+
+# sei un coglione, questo è semplicemente
+# un for ricorsivo 
+
 fattoriale:
     addi a1, a0, -1
 fatt:
