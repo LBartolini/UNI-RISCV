@@ -4,13 +4,14 @@
 
 li s1, 1
 lw a0, n
-addi a1, a0, -1
 
 jal fattoriale
 
 j end
 
 fattoriale:
+    addi a1, a0, -1
+fatt:
     addi sp, sp, -4 # push(ra)
     sw ra, 0(sp)
     
@@ -19,7 +20,7 @@ fattoriale:
     jal mult
     addi a1, a1, -1
     
-    jal fattoriale
+    jal fatt
 
 fine_fattoriale:
     lw ra, 0(sp) # pop(ra)
